@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JavaScript DOM Assignment</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <i class="fa-brands fa-js"></i>
+          <span>DOM<span class="highlight">Lab</span></span>
+        </div>
+
+        <div class="header-tag">JavaScript Practice</div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <span class="hero-label">
+          <i class="fa-solid fa-code"></i>
+          BEGINNER PROJECT
+        </span>
+
+        <h1>JavaScript DOM <span>Assignment</span></h1>
+
+        <p>
+          Learn how JavaScript interacts with HTML. Select elements, change
+          content and explore DOM events.
+        </p>
+
+        <div class="hero-info">
+          <span><i class="fa-solid fa-list-check"></i> 5 Tasks</span>
+          <span><i class="fa-solid fa-laptop-code"></i> Interactive</span>
+          <span><i class="fa-solid fa-mobile-screen"></i> Responsive</span>
+        </div>
+      </section>
+
+      <!-- Tasks Section -->
+      <section class="tasks-section">
+        <div class="section-heading">
+          <div>
+            <span class="small-heading">PRACTICE AREA</span>
+            <h2>Explore DOM Tasks</h2>
+          </div>
+
+          <span class="task-count">05 Exercises</span>
+        </div>
+
+        <div class="tasks-grid">
+          <!-- Task 1 -->
+          <div class="task-card">
+            <div class="card-top">
+              <div class="task-icon purple">
+                <i class="fa-solid fa-heading"></i>
+              </div>
+              <span class="task-number">TASK 01</span>
+            </div>
+
+            <h3>Change Heading Text</h3>
+
+            <p class="description">
+              JavaScript can select HTML headings and update their text content.
+            </p>
+
+            <div class="output-box">
+              <span class="output-label">UPDATED HEADING</span>
+              <h2 id="head">Hello World!</h2>
+            </div>
+
+            <div class="status">
+              <i class="fa-solid fa-circle-check"></i>
+              Updated using JavaScript
+            </div>
+          </div>
+
+          <!-- Task 2 -->
+          <div class="task-card">
+            <div class="card-top">
+              <div class="task-icon orange">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </div>
+              <span class="task-number">TASK 02</span>
+            </div>
+
+            <h3>Change Paragraph Text</h3>
+
+            <p class="description">
+              Click the button to change the paragraph using a DOM click event.
+            </p>
+
+            <div class="output-box">
+              <span class="output-label">PARAGRAPH OUTPUT</span>
+              <p id="para">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+            <button class="action-btn orange-btn" id="btn">
+              <i class="fa-solid fa-rotate"></i>
+              Change Text
+            </button>
+          </div>
+
+          <!-- Task 3 -->
+          <div class="task-card">
+            <div class="card-top">
+              <div class="task-icon green">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <span class="task-number">TASK 03</span>
+            </div>
+
+            <h3>Change Background</h3>
+
+            <p class="description">
+              Change the background color of the entire webpage with one click.
+            </p>
+
+            <div class="color-preview">
+              <div class="color-circle"></div>
+              <span>Light Blue Background</span>
+            </div>
+
+            <button class="action-btn green-btn" id="btn1">
+              <i class="fa-solid fa-fill-drip"></i>
+              Change Background
+            </button>
+          </div>
+
+          <!-- Task 4 -->
+          <div class="task-card">
+            <div class="card-top">
+              <div class="task-icon pink">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+              <span class="task-number">TASK 04</span>
+            </div>
+
+            <h3>Show Alert Message</h3>
+
+            <p class="description">
+              Display a JavaScript alert popup when the user clicks the button.
+            </p>
+
+            <div class="alert-preview">
+              <i class="fa-solid fa-circle-info"></i>
+              DOM Alert Message
+            </div>
+
+            <button class="action-btn pink-btn" id="btn2">
+              <i class="fa-solid fa-bell"></i>
+              Show Alert
+            </button>
+          </div>
+
+          <!-- Task 5 -->
+          <div class="task-card task-five">
+            <div class="card-top">
+              <div class="task-icon blue">
+                <i class="fa-solid fa-keyboard"></i>
+              </div>
+              <span class="task-number">TASK 05</span>
+            </div>
+
+            <h3>Update Text Using Input</h3>
+
+            <p class="description">
+              Enter any text below and display it inside the paragraph.
+            </p>
+
+            <div class="input-area">
+              <label for="input">Enter Your Text</label>
+
+              <input
+                id="input"
+                type="text"
+                placeholder="Type something here..."
+              />
+
+              <button class="action-btn blue-btn" id="btn3">
+                <i class="fa-solid fa-paper-plane"></i>
+                Update Text
+              </button>
+            </div>
+
+            <div class="result-box">
+              <span class="output-label">YOUR OUTPUT</span>
+              <p id="para2">Text Will Show Here</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-logo"><i class="fa-brands fa-js"></i> DOMLab</div>
+
+        <p>Practice • Learn • Improve</p>
+
+        <span>Created with HTML, CSS & JavaScript</span>
+      </footer>
+    </div>
+  </body>
+</html>
